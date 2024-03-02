@@ -1,0 +1,81 @@
+---
+BasedOnStyle: WebKit
+IndentWidth: 2
+RawStringFormats:
+  - Language: Cpp
+    Delimiters:
+      - cc
+      - CC
+      - cpp
+      - Cpp
+      - CPP
+      - "c++"
+      - "C++"
+    CanonicalDelimiter: ""
+    BasedOnStyle: WebKit
+AlignConsecutiveMacros: None
+AlignConsecutiveDeclarations: None
+AlignConsecutiveAssignments: None
+AlignEscapedNewlines: Left
+AlignOperands: DontAlign
+AlignAfterOpenBracket: DontAlign
+AllowAllArgumentsOnNextLine: true
+AllowAllParametersOfDeclarationOnNextLine: true
+AllowShortFunctionsOnASingleLine: Inline
+AlwaysBreakTemplateDeclarations: Yes
+BraceWrapping:
+  AfterCaseLabel: false
+  AfterClass: true
+  AfterControlStatement: false
+  AfterEnum: false
+  AfterFunction: true
+  AfterNamespace: false
+  AfterObjCDeclaration: false
+  AfterStruct: true
+  AfterUnion: false
+  AfterExternBlock: false
+  BeforeCatch: false
+  BeforeElse: false
+  IndentBraces: false
+  SplitEmptyFunction: true
+  SplitEmptyRecord: true
+  SplitEmptyNamespace: true
+  BeforeLambdaBody: false
+  BeforeWhile: false
+BreakBeforeBinaryOperators: None
+BreakBeforeBraces: Custom
+AlwaysBreakBeforeMultilineStrings: true
+BreakInheritanceList: AfterComma
+BreakConstructorInitializers: AfterColon
+PackConstructorInitializers: Never
+AllowAllConstructorInitializersOnNextLine: true
+ColumnLimit: 100
+ConstructorInitializerIndentWidth: 2
+ContinuationIndentWidth: 2
+EmptyLineBeforeAccessModifier: Always
+IncludeBlocks: Merge
+IndentCaseLabels: true
+IndentExternBlock: AfterExternBlock
+IndentPPDirectives: BeforeHash
+IndentWrappedFunctionNames: true
+KeepEmptyLinesAtTheStartOfBlocks: false
+NamespaceIndentation: None
+PointerAlignment: Left
+SpaceAfterTemplateKeyword: false
+SpaceBeforeCaseColon: false
+SpaceBeforeParens: ControlStatements
+SpaceBeforeSquareBrackets: false
+TabWidth: 2
+InsertBraces: true
+InsertNewlineAtEOF: true
+FixNamespaceComments: true
+ReflowComments: true
+ShortNamespaceLines: 2
+BreakStringLiterals: false
+LineEnding: CRLF
+AlignArrayOfStructures: None
+AllowShortBlocksOnASingleLine: Never
+MaxEmptyLinesToKeep: 2
+IndentAccessModifiers: false
+AccessModifierOffset: -2
+AllowShortEnumsOnASingleLine: false
