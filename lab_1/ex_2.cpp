@@ -3,14 +3,12 @@
 
 // Макрос заменен на inline функцию
 // Параметр помечен как const, так как внутри функции он не изменяется.я
-void inline print_ptr(const int* p)
-{
+void inline print_ptr(const int* p) {
     printf("p=%p, *p=%d, &p=%p\n", p, *p, &p);
 }
 
 
-int main()
-{
+int main() {
     int arr[] {100, 200, 300};
     int* ptr1 {};
     int* ptr2 {};
