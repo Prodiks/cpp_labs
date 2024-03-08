@@ -1,8 +1,6 @@
 #include <SFML/Graphics.hpp>
 #include <iostream>
 #include <random>
-#include <iostream>
-#include <memory>
 #include <vector>
 
 class ShapeItem : public sf::CircleShape {

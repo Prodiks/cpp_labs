@@ -5,8 +5,11 @@
 
 my_string::my_string(const char* str) {
     buf_size = content_size = my_strlen1(str);
+    // Выделение буфера в динамической памяти
     buf = new char[buf_size];
+    // Зануление буфера
     std::memset(buf, 0, buf_size);
+    // Копирование с-строки из аргумента
     my_strcpy(str, buf);
 }
 
@@ -43,6 +46,7 @@ my_string::~my_string() {
 }
 
 my_string& my_string::operator=(const my_string& str) {
+    // Увеличение буфера при необходимости
     if (buf_size < str.content_size) {
         delete[] buf;
         buf = new char[str.content_size];
@@ -95,4 +99,8 @@ std::istream& operator>>(std::istream& in, my_string& str) {
     in >> val;
     str = my_string(val.c_str());
     return in;
+}
+
+int my_string::operator>(const my_string& str) {
+    return my_strcmp(buf, str.buf) == 1;
 }
